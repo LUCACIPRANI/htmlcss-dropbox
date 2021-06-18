@@ -8,7 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* common  */
+/* COMMON  */
 .clearfix::after {
     content: "";
     display: table;
@@ -26,6 +26,7 @@ body {
 
 .w-60{
     width: 60%;
+    margin: 0 auto;
 }
 
 a {
@@ -34,34 +35,56 @@ a {
 }
 
 .btn {
-    height: 10px;
-    width: 10%;
+    height: 30px;
+    width: 70px;
     line-height: 10px;
     vertical-align: middle;
-    /* padding: 60%; */
 }
 
-/* / common  */
+/* / COMMON  */
 
-header {
+#main-header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 80px;
+    z-index: 999;
 }
 
-.container.primo ul li {
+.colonna li {
     display: inline-block;
-    padding: 20px;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 0;
+    color: royalblue;
 }
 
-.menu-left,
 .menu-right {
-    height: 100px;
-    width: 45%;
-    border: 1px solid black;
-    float: left;
-    /* padding: 1%; */
-    line-height: 0;
+    width: 50%;
+    line-height: 80px;
     vertical-align: middle;
-    padding: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    float: left;
+    text-align: right;
+}
+
+.menu-left{
+    width: 50%;
+    line-height: 80px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    float: left;
+}
+
+ li a {
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
 }
 
 /* .menu-left a:hover {
@@ -69,24 +92,18 @@ header {
 } */
 
 
-/* MENU-RIGHT  */
-
-.menu-right {
-    float: right;
-    text-align: right;
-}
-
-.menu-left{
-    float: left;
-}
-
 .btn.blue {
     background-color: #0D60FF;
     color: white;
+    height: 30px;
+    width: 70px;
+    border-color: transparent;
+    margin-right: auto;
+    font-size: 15px;
+    margin-right: 5%;
+    margin-left: 3%;
+
 }
-
-
-
 
 
 
@@ -99,12 +116,12 @@ header {
 
 .slider {
     background-color: #B3D0E8;
-    height: 700px;
+    height: 1000px;
     width: 100%;
 }
 
 .slider h1{
     color: black;
     font-size: 71px;
-    padding-top: 5%;
+    padding-top: 20%;
 }
