@@ -34,17 +34,23 @@ a {
     color: black;
 }
 
+p{
+    line-height: 1.3;
+}
+
 .btn {
     height: 30px;
     width: 70px;
     line-height: 10px;
     vertical-align: middle;
+    border: none;
 }
 
 /* / COMMON  */
-
+/* Header  */
 #main-header {
     background-color: white;
+    color: #242425;
     position: fixed;
     top: 0;
     left: 0;
@@ -87,41 +93,77 @@ a {
     text-decoration: none;
 }
 
-/* .menu-left a:hover {
-    border-bottom: lightgreen;
-} */
+.logo img {
+    vertical-align: middle;
+    height: auto;
+}
 
+/* COMANDO HOVER  */
+.menu-left ul li a:hover,
+.menu-right ul li a:hover {
+    border-bottom: 2px solid green;
+}
 
 .btn.blue {
     background-color: #0D60FF;
     color: white;
     height: 30px;
     width: 70px;
-    border-color: transparent;
     margin-right: auto;
     font-size: 15px;
     margin-right: 5%;
     margin-left: 3%;
-
 }
-
-
-
-
-
-/* -------------------------------- */ 
-/* ---------------- */
-
+/* FINE HEADER  */
 /* INIZIO SLIDER  */
 
-.slider {
+.jumbo {
     background-color: #B3D0E8;
-    height: 1000px;
+    height: 850px;
     width: 100%;
 }
 
-.slider h1{
+.jumbo h1{
     color: black;
     font-size: 71px;
-    padding-top: 20%;
+    padding-top: 15%;
+}
+
+.text-jumbo {
+    font-size: 18px;
+    width: 35%;
+    margin-top: 80px;
+    border-spacing: 20px;
+}
+
+.bt2nd {
+    height: 40px;
+    width: 20%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #0D60FF;
+    color: white;
+    font-size: 16px;
+}
+
+.delete {
+    font-size: 15px;
+}
+
+.arrow {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.container {
+    position: relative;
+}
+
+.jumbo-picture img {
+    position: absolute;
+    width: 75%;
+    height: 70%;
+    left: 35%;
+    top: 55%;
+
 }
