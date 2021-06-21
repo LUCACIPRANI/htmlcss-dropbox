@@ -143,7 +143,7 @@ p{
 /* HOVER  */
 .menu-left ul li a:hover,
 .menu-right ul li a:hover {
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid black;
 }
 
 /* FINE HEADER  */
@@ -170,9 +170,9 @@ p{
     font-size: 15px;
 }
 
-.arrow {
-    margin-top: 2%;
-    font-size: 50px;
+.fa-arrow-down {
+    margin-top: 4%;
+    font-size: 45px;
 }
 
 .container {
@@ -184,7 +184,7 @@ p{
     width: 65%;
     height: 65%;
     left: 35%;
-    top: 55%;
+    top: 58%;
 }
 /* FINE JUMBO  */
 /* INIZIO MAIN  */
@@ -243,6 +243,7 @@ div[class*="an"] {
     float: left;
     width: calc(100% / 3 - 20px);
     padding-bottom: 15%;
+    min-height: 950px;
 }
 
 .col-right {
@@ -250,6 +251,8 @@ div[class*="an"] {
     float: right;
     width: calc(100% / 3 - 20px);
     padding-bottom: 15%;
+    min-height: 950px;
+
 }
 
 .col-center {
@@ -258,6 +261,8 @@ div[class*="an"] {
     width: calc(100% / 3 - 20px);
     margin: 0 30px;
     padding-bottom: 15%;
+    min-height: 950px;
+
 }
 
 .top-title {
@@ -410,7 +415,7 @@ ul li {
 
 .container-brand-colon {
     border: 3px solid red;
-    height: 400px;
+    height: 28vw;
     width: 100%;
 }
 
@@ -423,7 +428,7 @@ ul li {
 
 .firm {
     border: 1px solid black;
-    height: 200px;
+    height: 13.9vw;
     width: calc(100% / 2);
     float: left;
 }
@@ -436,10 +441,98 @@ ul li {
 /* fine sezione 5 */
 
 /* Inizio sezione 6  */
+.FAQ {
+    height: 550px;
+    margin-top: 7%;
+    border: 1px solid black;
+}
 
+.FAQ h2{
+    line-height: 4.5;
+    font-size: 25px;
+}
+
+.FAQ hr{
+    width: 100%;
+    margin: 0;
+}
+
+.question{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 5;
+    float: left;
+    width: 90%;
+}
+
+.FAQ i{
+    width: 10%;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 4;
+    text-align: center;
+}
+}
 /* fine sezione 6  */
 /* FINE MAIN  */
 /* inizio FOOTER  */
+footer {
+    background-color: red;
+}
+.foot-up {
+    background-color: black;
+    height: 45vh;
+    color: white;
+}
+
+.col-ft {
+    height: 30vh;
+    width: calc(100% / 5 - 5vw);
+    float: left;
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+
+.col-ft:last-child{
+    margin-right: 5vw;
+}
+
+.col-ft:first-child{
+    margin-left: 7vw;
+}
+
+.col-ft h3{
+    padding: 2vw;
+    font-size: 20px;
+}
+
+.col-ft ul li{
+    padding-left: 2vw;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.foot-down {
+    height: 13vh;
+    background-color: black;
+    color: white;
+}
+
+.text-ft-down{
+    height: 100px;
+    width: 7vw;
+    border-top: 0.5px solid white;
+    margin-left: 9vw;
+    padding-top: 2.5vw;
+    font-size: 13px;
+    color: gray;
+}
+
+.fa-sort-up{
+  vertical-align: text-top;
+  line-height: 2;
+  font-size: 11px;
+}
 
 
 /* fine FOOTER  */
