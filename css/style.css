@@ -78,7 +78,7 @@ p{
     vertical-align: top;    
 }
 
-.bottone-vendite {
+.bottone-largest {
     height: 30px;
     width: 270px;
     margin: 20px 0 10px;
@@ -408,43 +408,151 @@ ul li {
 }
 /* fine sezione 5-intro  */
 /* Inizio sezione 5 */
-.section5 {
-    height: 700px;
-    background-color: blue;
-}
-
 .container-brand-colon {
-    border: 3px solid red;
-    height: 28vw;
+    /* border: 3px solid red; */
+    height: 32vw;
     width: 100%;
+    background-color: #F5F5F5;
 }
 
 .colon {
     height: 100%;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 40px);
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .firm {
-    border: 1px solid black;
-    height: 13.9vw;
+    /* border: 1px solid black; */
+    height: 15.95vw;
     width: calc(100% / 2);
     float: left;
+}
+
+.colon.central {
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .firm img {
     width: 100%;
     height: 100%;
+    object-fit: contain;  
+    padding: 25%;
+}
+/* container-brand-colon  */
+/* colonne sinistra  */
+.designit{
+    background-color: #A2D39B;
+    border: 8px solid #D0E9CD;
+    width: 50%;
 }
 
-/* fine sezione 5 */
+.arizona{
+    background-color: #8D4B62;
+    width: 100%;
+}
 
+.florida{
+    background-color: #1193CE;
+    width: 100%;
+}
+
+.topps{
+    background-color: #FD1C1D;
+    width: 100%;
+}
+
+/* colonna centrali  */
+
+.designit-cx img{
+    width: 25%;
+    height: 25%;
+    margin: 45px 40px 15px 10px;
+}
+
+.colon.central hr {
+    width: 45px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+
+.colon.central p{
+    font-size: 16px;
+    /* padding-left: 2px;
+    padding-right: 2px; */
+    margin-bottom: 20px;
+}
+
+blockquote{
+    padding: 20px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+/* colonna destra  */
+
+.Wbicycle{
+    background-color: #D50020;
+    width: 50%;
+}
+
+.hearts{
+    background-color: #B3D0E8;
+    width: 100%;
+}
+
+.lonely{
+    background-color: #0D2481;
+    width: 100%;
+}
+
+.clearchan{
+    background-color: #FED830;
+    width: 100%;
+}
+/* container-brand-colon  */
+/* inizio brand-bottom  */
+.brand-bottom{
+    background-color:  #B3D0E8;
+}
+
+.brand-bottom h1{
+    color: #62092B;
+    float: left;
+    width: 60%;
+    height: 60%;
+    padding-left: 15%;
+    font-size: 36px;
+    line-height: 1.4;
+/* centratura */
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.brand-large{
+    border: 1px solid black;
+
+    width: 40%;
+    float: left;
+/* centratura */
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.bottone-large{
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 300px;
+}
+/* fine brand-bottom  */
+/* fine section5  */
 /* Inizio sezione 6  */
 .FAQ {
-    height: 550px;
     margin-top: 7%;
-    border: 1px solid black;
+    margin-bottom: 7%;
+    /* border: 1px solid black; */
 }
 
 .FAQ h2{
@@ -471,7 +579,6 @@ ul li {
     vertical-align: middle;
     line-height: 4;
     text-align: center;
-}
 }
 /* fine sezione 6  */
 /* FINE MAIN  */
@@ -533,6 +640,4 @@ footer {
   line-height: 2;
   font-size: 11px;
 }
-
-
 /* fine FOOTER  */
