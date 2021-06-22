@@ -38,7 +38,6 @@ p{
     line-height: 1.3;
 }
 /* / COMMON  */
-
 /* BOTTONI  */
 /* bottone comune  */
 .btn {
@@ -48,6 +47,11 @@ p{
     font-size: 1em;
     color: white;
     background-color: #0D60FF;
+}
+
+.btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 /* bottone comune  */
 #bott {
@@ -92,8 +96,12 @@ p{
     background-color: white;
     color: black;
 }
-/* BOTTONI  */
 
+#btn-bianco:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* BOTTONI  */
 /* HEADER  */
 #main-header {
     width: 100%;
@@ -138,17 +146,15 @@ p{
 .logo img {
     vertical-align: middle;
     height: auto;
+    cursor: pointer;
 }
 
-/* HOVER  */
 .menu-left ul li a:hover,
 .menu-right ul li a:hover {
     border-bottom: 2px solid black;
 }
-
 /* FINE HEADER  */
 /* INIZIO JUMBO  */
-
 .jumbo {
     background-color: #B3D0E8;
     height: 750px;
@@ -156,8 +162,7 @@ p{
 }
 
 .jumbo h1{
-    color: black;
-    font-size: 71px;
+    font-size: 70px;
     padding-top: 15%;
 }
 
@@ -189,8 +194,7 @@ p{
 /* FINE JUMBO  */
 /* INIZIO MAIN  */
 /* Inizio sezione intro  */
-
-.section.intro {
+.plans-intro{
     margin-top: 10%;
 }
 
@@ -226,14 +230,13 @@ p{
     color: black;
 }
 
-div[class*="an"] {
+div[class*="circle an"] {
     border: 0.3px solid lightgray;
   }
 
 /* Fine sezione intro  */
 /* Inizio sezione 2 column  */
-
-.col-container {
+.plans{
     margin-top: 1%;
     display: table;
 }
@@ -252,7 +255,6 @@ div[class*="an"] {
     width: calc(100% / 3 - 20px);
     padding-bottom: 15%;
     min-height: 950px;
-
 }
 
 .col-center {
@@ -262,7 +264,6 @@ div[class*="an"] {
     margin: 0 30px;
     padding-bottom: 15%;
     min-height: 950px;
-
 }
 
 .top-title {
@@ -279,8 +280,12 @@ div[class*="an"] {
     font-size: 16px;
 }
 
-/* all'interno delle colonne  */
+.underline:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
 
+/* all'interno delle colonne  */
 .col-text h2 {
     padding: 20px;
     text-align: left;
@@ -307,10 +312,6 @@ strong {
     padding: 15px 0 15px 20px;
 }
 
-/* .col-left.highlighting ul li:last-child {
-    text-decoration: underline;
-} */
-
 .acquista {
     padding-left: 20px;
     font-size: 14px;
@@ -325,9 +326,8 @@ ul li {
 }
 /* all'interno delle colonne  */
 /* fine sezione column  */
-
 /* SECTION COLUMN DOWN  */
-.section.column-down {
+.plans-column-down {
     height: 200px;
     margin-top: 3%;
     border: 1px solid lightgray;
@@ -339,15 +339,14 @@ ul li {
     color: black;
     font-size: 14px;
 }
-
 /* fine SECTION COLUMN DOWN  */
 /* Inizio sezione 3 */
-.section3 {
+.partners {
     margin: 10% auto;
     height: 400px;
 }
 
-.section3 img {
+.partners img {
     width: 54%;
     height: 55%;
     float: left;
@@ -371,9 +370,7 @@ ul li {
     font-size: 15px;
 }
 /* fine sezione 3 */
-
 /* Inizio sezione 4  */
-
 /* Inizio mini sezioni  */
 .mini-sezione {
     width: calc(100% / 3 - 30px);
@@ -403,13 +400,13 @@ ul li {
 }
 /* fine sezione 4  */
 /* inizio sezione-intro 5  */
-.section5-intro h1{
+.teams-intro h1{
     padding-bottom: 25px;
+    line-height: 1.4;
 }
 /* fine sezione 5-intro  */
 /* Inizio sezione 5 */
-.container-brand-colon {
-    /* border: 3px solid red; */
+.container-teams-colon {
     height: 32vw;
     width: 100%;
     background-color: #F5F5F5;
@@ -419,12 +416,10 @@ ul li {
     height: 100%;
     width: calc(100% / 3 - 40px);
     float: left;
-    /* border: 1px solid black; */
 }
 
 .firm {
-    /* border: 1px solid black; */
-    height: 15.95vw;
+    height: 16vw;
     width: calc(100% / 2);
     float: left;
 }
@@ -439,17 +434,18 @@ ul li {
     height: 100%;
     object-fit: contain;  
     padding: 25%;
+    filter: invert(1);
 }
 /* container-brand-colon  */
 /* colonne sinistra  */
 .designit{
     background-color: #A2D39B;
-    border: 8px solid #D0E9CD;
+    border: 10px solid #D0E9CD;
     width: 50%;
 }
 
 .arizona{
-    background-color: #8D4B62;
+    background-color: #62092B;
     width: 100%;
 }
 
@@ -463,35 +459,36 @@ ul li {
     width: 100%;
 }
 
-/* colonna centrali  */
+/* colonna centrale */
+.colon.central {
+    overflow-y: auto;
+}
 
 .designit-cx img{
-    width: 25%;
-    height: 25%;
-    margin: 45px 40px 15px 10px;
+    width: 30%;
+    height: 30%;
+    margin-top: 50px;
 }
 
 .colon.central hr {
     width: 45px;
-    margin-left: 5px;
-    margin-bottom: 40px;
+    margin-left: 0;
+    margin-bottom: 45px;
 }
 
 .colon.central p{
-    font-size: 16px;
-    /* padding-left: 2px;
-    padding-right: 2px; */
-    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 350;
+    margin: 30px 0;
 }
 
 blockquote{
-    padding: 20px;
-    padding-left: 5px;
-    font-size: 16px;
+    padding: 20px 20px 20px 0;
+    font-size: 15px;
+    font-weight: 350;
 }
 
 /* colonna destra  */
-
 .Wbicycle{
     background-color: #D50020;
     width: 50%;
@@ -531,8 +528,6 @@ blockquote{
 }
 
 .brand-large{
-    border: 1px solid black;
-
     width: 40%;
     float: left;
 /* centratura */
@@ -545,6 +540,7 @@ blockquote{
     color: black;
     height: 35px;
     width: 300px;
+    border: none;
 }
 /* fine brand-bottom  */
 /* fine section5  */
@@ -552,7 +548,18 @@ blockquote{
 .FAQ {
     margin-top: 7%;
     margin-bottom: 7%;
-    /* border: 1px solid black; */
+}
+
+.containerFAQ:hover p {
+    display: inline;
+    cursor: auto;
+}
+
+.containerFAQ p{
+    display: none;
+    font-size: 14px;    
+    color: gray;
+    text-align: center;
 }
 
 .FAQ h2{
@@ -586,6 +593,7 @@ blockquote{
 footer {
     background-color: red;
 }
+
 .foot-up {
     background-color: black;
     height: 45vh;
