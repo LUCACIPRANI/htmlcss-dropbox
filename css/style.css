@@ -121,6 +121,7 @@ p{
 }
 
 .menu-right {
+    position: relative;
     width: 50%;
     line-height: 80px;
     vertical-align: middle;
@@ -135,6 +136,10 @@ p{
     vertical-align: middle;
     padding: 0 0 5px 5px;
     float: left;
+}
+
+.menu-right li{
+    position: relative;
 }
 
  li a {
@@ -153,6 +158,30 @@ p{
 .menu-right ul li a:hover {
     border-bottom: 2px solid black;
 }
+/* +++++++++MENU A TENDINA++ */
+
+.menu-right ul li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    display: block;
+    padding: none;
+    line-height: 2;
+    width: 230px;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 79px;
+    left: -20px;
+    padding: 7px 0;
+    background-color: #fafafa;
+    line-height: 100%;
+    text-align: left;
+}
+
 /* FINE HEADER  */
 /* INIZIO JUMBO  */
 .jumbo {
